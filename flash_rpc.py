@@ -87,5 +87,4 @@ def recheck():
     # Disconnect the RPC client when done
     RPC.close()
 
-time.sleep(5)
 recheck()
