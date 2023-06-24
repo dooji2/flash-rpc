@@ -1,4 +1,4 @@
-![dooji_confidential](https://github.com/dooji2/flash-rpc/assets/52493784/cd0847ec-6a7d-449b-8c82-942a0e7d172c)
+![dooji_confidential2](https://github.com/dooji2/flash-rpc/assets/52493784/fc92989d-4e81-4588-a346-c5dd60e22e98)
 # Adobe Flash Discord Rich Presence
 
 Adobe Flash Discord Rich Presence is a program written in Python to let all of your friends know what cool & awesome Flash game you're playing!
