@@ -5,15 +5,17 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎9:01:22 AM
+# Last Modified: Sunday, ‎June ‎25, ‎2023, ‏‎1:55:59 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
 import time
 import os
-from pypresence import Presence
 import psutil
-
+from pypresence import Presence
+import pystray
+from PIL import Image
+import threading
 
 client_id = "1122093746402627604"
 RPC = Presence(client_id)
@@ -29,7 +31,6 @@ for process in psutil.process_iter():
 def recheck(game_name):
     for process in psutil.process_iter():
         if "flash" in process.name(): 
-            # Flash process found, get the full command line
             flash_command = " ".join(process.cmdline())
             if "swf" in flash_command:
                 game_name = flash_command.split(os.path.sep)[-1]
@@ -62,12 +63,28 @@ def recheck(game_name):
                 elif game_name == "papastacomia.swf":
                     RPC.update(details="Playing Papa's Taco Mia!", large_image="taco", small_image="flash")
 
+def on_quit_callback(icon, item):
+    icon.stop()
+    RPC.close()
+    print("Script stopped.")
 
-while True:
-    if "flash" not in process.name(): RPC.clear()
-    recheck(game_name)
-    time.sleep(5)  
-    
+def run_script():
+    while True:
+        if "flash" not in process.name(): RPC.clear()
+        recheck(game_name)
+        time.sleep(5)  
 
-RPC.close()
+def create_system_tray_icon():
+    image = Image.open("icon.png")  
+    menu = (
+        pystray.MenuItem("Exit Flash RPC", on_quit_callback),
+    )
+    icon = pystray.Icon("Flash RPC", image, "Flash RPC", menu)
+    return icon
+
+if __name__ == "__main__":
+    icon = create_system_tray_icon()
+    thread = threading.Thread(target=run_script)
+    thread.start()
+    icon.run()
 
