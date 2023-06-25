@@ -5,7 +5,7 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: Sunday, ‎June ‎25, ‎2023, ‏‎2:31:32 PM
+# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎3:13:10 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
@@ -85,8 +85,10 @@ def on_quit_callback(icon, item):
 
 def run_script():
     while True:
-        if "flash" not in process.name(): RPC.clear()
-        recheck(game_name)
+        if "flash" not in process.name(): 
+            RPC.clear()
+        if "flash" in process.name():
+            recheck(game_name)
         time.sleep(5)  
 
 def create_system_tray_icon():
