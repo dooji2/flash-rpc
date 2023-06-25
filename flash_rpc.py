@@ -5,7 +5,7 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎5:23:18 PM
+# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎6:03:38 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
@@ -86,10 +86,9 @@ def run_script():
 
         if not flash_found:
             RPC.clear()
-        try:
-            time.sleep(5)
-        except KeyboardInterrupt:
-            break
+        if "flash" in process.name():
+            recheck(game_name)
+        time.sleep(5)  
 
 # def create_about_window():
 #     about_window = tk.Toplevel()
@@ -130,7 +129,7 @@ def create_about_window():
     label.imagei = photo  
     label.pack(pady=20)
 
-    credits_label = tk.Label(about_window, text="Author: Dooji\nVersion: 1.0.3c")
+    credits_label = tk.Label(about_window, text="Author: Dooji\nVersion: 1.0.4")
     credits_label.pack()
 
     about_window.eval('tk::PlaceWindow . center')
