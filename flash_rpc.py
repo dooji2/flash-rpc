@@ -5,7 +5,7 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: Sunday, ‎June ‎25, ‎2023, ‏‎1:55:59 PM
+# Last Modified: Sunday, ‎June ‎25, ‎2023, ‏‎2:31:32 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
@@ -16,6 +16,21 @@ from pypresence import Presence
 import pystray
 from PIL import Image
 import threading
+import sys
+import ctypes
+import base64
+import tempfile
+
+
+if getattr(sys, 'frozen', False):
+    # The application is running in a bundle
+    bundle_dir = sys._MEIPASS
+else:
+    # The application is running in the normal Python environment
+    bundle_dir = os.path.dirname(os.path.abspath(__file__))
+
+icon_path = os.path.join(bundle_dir, "icon.png")
+
 
 client_id = "1122093746402627604"
 RPC = Presence(client_id)
@@ -75,7 +90,7 @@ def run_script():
         time.sleep(5)  
 
 def create_system_tray_icon():
-    image = Image.open("icon.png")  
+    image = Image.open(icon_path)
     menu = (
         pystray.MenuItem("Exit Flash RPC", on_quit_callback),
     )
