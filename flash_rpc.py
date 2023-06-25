@@ -5,7 +5,7 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎3:13:10 PM
+# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎3:33:09 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
@@ -35,13 +35,6 @@ icon_path = os.path.join(bundle_dir, "icon.png")
 client_id = "1122093746402627604"
 RPC = Presence(client_id)
 RPC.connect()
-
-for process in psutil.process_iter():
-        if "flash" in process.name(): 
-            
-            flash_command = " ".join(process.cmdline())
-            if "swf" in flash_command:
-                game_name = flash_command.split(os.path.sep)[-1]
 
 def recheck(game_name):
     for process in psutil.process_iter():
@@ -81,14 +74,21 @@ def recheck(game_name):
 def on_quit_callback(icon, item):
     icon.stop()
     RPC.close()
-    print("Script stopped.")
 
 def run_script():
     while True:
-        if "flash" not in process.name(): 
+        flash_found = False
+        for process in psutil.process_iter():
+            if "flash" in process.name():
+                flash_found = True
+                flash_command = " ".join(process.cmdline())
+                if "swf" in flash_command:
+                    game_name = flash_command.split(os.path.sep)[-1]
+                    recheck(game_name)
+                    break
+
+        if not flash_found:
             RPC.clear()
-        if "flash" in process.name():
-            recheck(game_name)
         time.sleep(5)  
 
 def create_system_tray_icon():
