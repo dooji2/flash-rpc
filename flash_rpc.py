@@ -5,7 +5,7 @@
 # GitHub: https://github.com/dooji2
 # Discord: dooji_
 
-# Last Modified: ‎Sunday, ‎June ‎25, ‎2023, ‏‎6:03:38 PM
+# Last Modified: ‎Tuesday, ‎July ‎4, ‎2023, ‏‎2:39:39 PM
 # Modified By: Dooji (doojisbasement@gmail.com)
 
 # Copyright (c) 2023 Dooji
@@ -71,7 +71,67 @@ def recheck(game_name):
                     RPC.update(details="Playing Papa's Sushiria", large_image="sushi", small_image="flash")
                 elif game_name == "papastacomia.swf":
                     RPC.update(details="Playing Papa's Taco Mia!", large_image="taco", small_image="flash")
-
+                elif "pacman" in game_name.lower():
+                    RPC.update(details="Playing Pac-Man", large_image="pacman", small_image="flash")
+                elif "fireboy" in game_name.lower() or "watergirl" in game_name.lower():
+                    RPC.update(details="Playing Fireboy and Watergirl", large_image="fandw", small_image="flash")
+                #
+                #
+                #
+                elif "supermario" in game_name:
+                    RPC.update(details="Playing Super Mario Flash", large_image="supermario", small_image="flash")
+                elif "arkanoid" in game_name:
+                    RPC.update(details="Playing Arkanoid", large_image="arkanoid", small_image="flash")
+                elif "tetris" in game_name:
+                    RPC.update(details="Playing Tetris", large_image="tetris", small_image="flash")
+                elif "snake" in game_name:
+                    RPC.update(details="Playing Snake", large_image="snake", small_image="flash")
+                elif "minesweeper" in game_name:
+                    RPC.update(details="Playing Minesweeper", large_image="minesweeper", small_image="flash")
+                elif "solitaire" in game_name:
+                    RPC.update(details="Playing Solitaire", large_image="solitaire", small_image="flash")
+                elif "sudoku" in game_name:
+                    RPC.update(details="Playing Sudoku", large_image="sudoku", small_image="flash")
+                elif "bejeweled" in game_name:
+                    RPC.update(details="Playing Bejeweled", large_image="bejeweled", small_image="flash")
+                elif "2048" in game_name:
+                    RPC.update(details="Playing 2048", large_image="2048", small_image="flash")
+                elif "angrybirds" in game_name:
+                    RPC.update(details="Playing Angry Birds", large_image="angrybirds", small_image="flash")
+                elif "plantsvszombies" in game_name:
+                    RPC.update(details="Playing Plants vs. Zombies", large_image="plantsvszombies", small_image="flash")
+                elif "cuttherope" in game_name:
+                    RPC.update(details="Playing Cut the Rope", large_image="cuttherope", small_image="flash")
+                elif "bloonstd" in game_name:
+                    RPC.update(details="Playing Bloons TD", large_image="bloonstd", small_image="flash")
+                elif "happywheels" in game_name:
+                    RPC.update(details="Playing Happy Wheels", large_image="happywheels", small_image="flash")
+                elif "flappybird" in game_name:
+                    RPC.update(details="Playing Flappy Bird", large_image="flappybird", small_image="flash")
+                elif "penguin" in game_name:
+                    RPC.update(details="Playing Learn to Fly", large_image="penguin", small_image="flash")
+                elif "raftwars" in game_name:
+                    RPC.update(details="Playing Raft Wars", large_image="raftwars", small_image="flash")
+                elif "ageofwar" in game_name:
+                    RPC.update(details="Playing Age of War", large_image="ageofwar", small_image="flash")
+                elif "stickwar" in game_name:
+                    RPC.update(details="Playing Stick War", large_image="stickwar", small_image="flash")
+                elif "linegame" in game_name:
+                    RPC.update(details="Playing The Line Game", large_image="linegame", small_image="flash")
+                elif "happyroom" in game_name:
+                    RPC.update(details="Playing Happy Room", large_image="happyroom", small_image="flash")
+                elif "bighouseclean" in game_name:
+                    RPC.update(details="Playing Big House Clean Up", large_image="bighouseclean", small_image="flash")
+                elif "boxhead" in game_name:
+                    RPC.update(details="Playing Boxhead", large_image="boxhead", small_image="flash")
+                elif "defendyourcastle" in game_name:
+                    RPC.update(details="Playing Defend Your Castle", large_image="defendyourcastle", small_image="flash")
+                elif "portal" in game_name:
+                    RPC.update(details="Playing Portal: The Flash Version", large_image="portal", small_image="flash")
+                elif "maxdamage" in game_name:
+                    RPC.update(details="Playing Max Damage", large_image="maxdamage", small_image="flash")
+                elif "neonrider" in game_name:
+                    RPC.update(details="Playing Neon Rider", large_image="neonrider", small_image="flash")
 def run_script():
     while True:
         flash_found = False
@@ -129,7 +189,7 @@ def create_about_window():
     label.imagei = photo  
     label.pack(pady=20)
 
-    credits_label = tk.Label(about_window, text="Author: Dooji\nVersion: 1.0.4")
+    credits_label = tk.Label(about_window, text="Author: Dooji\nVersion: 1.0.5")
     credits_label.pack()
 
     about_window.eval('tk::PlaceWindow . center')
