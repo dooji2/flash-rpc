@@ -1,0 +1,174 @@
+{
+  "papaspizzeria_v2.swf": {
+    "game_name": "Playing Papa's Pizzeria",
+    "large_image": "pizza"
+  },
+  "papaswingeria.swf": {
+    "game_name": "Playing Papa's Wingeria",
+    "large_image": "wing"
+  },
+  "papasbakeria.swf": {
+    "game_name": "Playing Papa's Bakeria",
+    "large_image": "bake"
+  },
+  "papasburgeria.swf": {
+    "game_name": "Playing Papa's Burgeria",
+    "large_image": "burger"
+  },
+  "papascheeseria_102.swf": {
+    "game_name": "Playing Papa's Cheeseria",
+    "large_image": "cheese"
+  },
+  "papascupcakeria.swf": {
+    "game_name": "Playing Papa's Cupcakeria",
+    "large_image": "cupcake"
+  },
+  "papasdonuteria.swf": {
+    "game_name": "Playing Papa's Donuteria",
+    "large_image": "donut"
+  },
+  "papasfreezeria.swf": {
+    "game_name": "Playing Papa's Freezeria",
+    "large_image": "freeze"
+  },
+  "papashotdoggeria.swf": {
+    "game_name": "Playing Papa's Hotdoggeria",
+    "large_image": "hotdog"
+  },
+  "papaspancakeria.swf": {
+    "game_name": "Playing Papa's Pancakeria",
+    "large_image": "pancake"
+  },
+  "papaspastaria.swf": {
+    "game_name": "Playing Papa's Pastaria",
+    "large_image": "pasta"
+  },
+  "papasscooperia_v102.swf": {
+    "game_name": "Playing Papa's Scooperia",
+    "large_image": "scoop"
+  },
+  "papassushiria.swf": {
+    "game_name": "Playing Papa's Sushiria",
+    "large_image": "sushi"
+  },
+  "papastacomia.swf": {
+    "game_name": "Playing Papa's Tacomia",
+    "large_image": "taco"
+  },
+  "pacman": {
+    "details": "Playing Pac-Man",
+    "large_image": "pacman"
+  },
+  "fireboy": {
+    "details": "Playing Fireboy and Watergirl",
+    "large_image": "fandw"
+  },
+  "supermario": {
+    "details": "Playing Super Mario Flash",
+    "large_image": "supermario"
+  },
+  "arkanoid": {
+    "details": "Playing Arkanoid",
+    "large_image": "arkanoid"
+  },
+  "tetris": {
+    "details": "Playing Tetris",
+    "large_image": "tetris"
+  },
+  "snake": {
+    "details": "Playing Snake",
+    "large_image": "snake"
+  },
+  "minesweeper": {
+    "details": "Playing Minesweeper",
+    "large_image": "minesweeper"
+  },
+  "solitaire": {
+    "details": "Playing Solitaire",
+    "large_image": "solitaire"
+  },
+  "sudoku": {
+    "details": "Playing Sudoku",
+    "large_image": "sudoku"
+  },
+  "bejeweled": {
+    "details": "Playing Bejeweled",
+    "large_image": "bejeweled"
+  },
+  "2048": {
+    "details": "Playing 2048",
+    "large_image": "2048"
+  },
+  "angrybirds": {
+    "details": "Playing Angry Birds",
+    "large_image": "angrybirds"
+  },
+  "plantsvszombies": {
+    "details": "Playing Plants vs. Zombies",
+    "large_image": "plantsvszombies"
+  },
+  "cuttherope": {
+    "details": "Playing Cut the Rope",
+    "large_image": "cuttherope"
+  },
+  "bloonstd": {
+    "details": "Playing Bloons TD",
+    "large_image": "bloonstd"
+  },
+  "happywheels": {
+    "details": "Playing Happy Wheels",
+    "large_image": "happywheels"
+  },
+  "flappybird": {
+    "details": "Playing Flappy Bird",
+    "large_image": "flappybird"
+  },
+  "penguin": {
+    "details": "Playing Learn to Fly",
+    "large_image": "penguin"
+  },
+  "raftwars": {
+    "details": "Playing Raft Wars",
+    "large_image": "raftwars"
+  },
+  "ageofwar": {
+    "details": "Playing Age of War",
+    "large_image": "ageofwar"
+  },
+  "stickwar": {
+    "details": "Playing Stick War",
+    "large_image": "stickwar"
+  },
+  "linegame": {
+    "details": "Playing The Line Game",
+    "large_image": "linegame"
+  },
+  "happyroom": {
+    "details": "Playing Happy Room",
+    "large_image": "happyroom"
+  },
+  "bighouseclean": {
+    "details": "Playing Big House Clean Up",
+    "large_image": "bighouseclean"
+  },
+  "boxhead": {
+    "details": "Playing Boxhead",
+    "large_image": "boxhead"
+  },
+  "defendyourcastle": {
+    "details": "Playing Defend Your Castle",
+    "large_image": "defendyourcastle"
+  },
+  "portal": {
+    "details": "Playing Portal: The Flash Version",
+    "large_image": "portal"
+  },
+  "maxdamage": {
+    "details": "Playing Max Damage",
+    "large_image": "maxdamage"
+  },
+  "neonrider": {
+    "details": "Playing Neon Rider",
+    "large_image": "neonrider"
+  }
+}
